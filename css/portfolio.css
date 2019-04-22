@@ -1,0 +1,51 @@
+body {
+    background-color: #1d14d1;
+    color: white;
+    font-family: 'Open Sans';
+}
+
+h1 {
+    text-align: center;
+    color: #F64C72;
+}
+
+nav a { 
+    color: #F64C72;
+    border: 1px #F64C72 solid;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header{
+    height: 50px;
+}
+
+nav{
+    margin-top: 20px;
+}
+
+#logo{
+    float: left;
+}   
+
+#nav-buttons{
+    float: right;
+}
+
+.project_card{
+    width: 40%;
+    border: 1px #F64C72 solid;
+}
+
+.devices {
+    width: 30px;
+}
+
+.card_name {
+    width: 200px;
+}
+
+.preview{
+    max-width: 100%;
+}
