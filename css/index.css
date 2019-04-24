@@ -12,8 +12,11 @@ body {
 }
 
 h1 {
-    text-align: center;
     color: #F64C72;
+}
+
+header{
+    height: 60px;
 }
 
 nav a { 
@@ -33,11 +36,28 @@ nav {
 }
 
 header nav .logo {
-    font-size: 2rem;
+    font-size: 1.7rem;
+}
+
+#landing {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#landing-content {
+    position: relative;
+    left: 15%;
+}
+
+#landing img{
+    max-width: 230px;
+    justify-self: flex-end;
 }
 
 
-@media (max-width: 470px) {
+@media (max-width: 490px) {
     header nav {
         display: flex;
         flex-direction: column;
@@ -50,24 +70,39 @@ header nav .logo {
     }
 }
 
-/* #landing{
-    text-align: center;
-}
-
 #about_me{
-    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
-#photo{
-    width: 150px;
-    float: left;
+#about_me img{
+    height: 350px;
 }
 
 #bio {
     width: 250px;
-    float: right;
 }
 
+@media (max-width: 705px) {
+    #landing {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+    #landing-content {
+        left: 0%;
+        margin-bottom: 20px;
+    }
+
+    #about_me {
+        flex-direction: column;
+    }
+}
+
+/*
 .project_card{
     width: 40%;
     border: 1px #F64C72 solid;
