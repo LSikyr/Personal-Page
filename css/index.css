@@ -1,7 +1,14 @@
+:root {
+    font-family: 'Open Sans';
+    scroll-behavior: smooth;
+}
+
 body {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 15px;
     background-color: #1d14d1;
     color: white;
-    font-family: 'Open Sans';
 }
 
 h1 {
@@ -17,23 +24,33 @@ nav a {
     padding: 10px;
 }
 
-header{
-    height: 50px;
+nav {
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-nav{
-    margin-top: 20px;
+header nav .logo {
+    font-size: 2rem;
 }
 
-#logo{
-    float: left;
-}   
 
-#nav-buttons{
-    float: right;
+@media (max-width: 470px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }    
+    
+    header nav .logo {
+        align-self: center;
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+    }
 }
 
-#landing{
+/* #landing{
     text-align: center;
 }
 
@@ -83,4 +100,4 @@ nav{
 
 #contact-form{
     float: right;
-}
+} */
