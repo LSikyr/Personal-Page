@@ -1,20 +1,35 @@
-if(localStorage['text']){
-    window.onload = function(){
-        alert('Hello ' + localStorage['text']);
-    }
-}
+//fetch random advice
+document.querySelector('.fetch-advice').addEventListener('click', fetchJoke);
+function fetchJoke(){
+  fetch('https://api.adviceslip.com/advice')
+  .then ( response => response.json() )
+  .then ( advice => document.querySelector('.modal-text').innerText = advice.slip.advice )
+};
 
-const text = document.querySelector('#name-input');
+//check input
+const name = document.querySelector('#name-input');
+const email = document.querySelector('#email-input');
+const comment = document.querySelector('#comment-input');
 
-document.querySelector('#modal-button')
+document.querySelector('button[type=submit]')
   .addEventListener('click', saveText);
 
+document.querySelector('.load')
+  .addEventListener('click', loadText);
 
 function saveText(e) {
   e.preventDefault();
-  const str = text.value;
-  localStorage['text'] = str;
+  localStorage['name'] = name.value;
+  localStorage['email'] = email.value;
+  localStorage['comment'] = comment.value;
+  document.querySelector('.modal-name').innerText = localStorage['name'] || '';
+  document.querySelector('.modal-email').innerText = localStorage['email'] || '';
+  document.querySelector('.modal-comment').innerText = localStorage['comment'] || '';
 }
 
-// need to fix
-// document.getElementById('#modall-name').innerHTML = "Hello " + str; 
+function loadText() {
+  name.value = localStorage['name'] || '';
+}
+
+
+

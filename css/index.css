@@ -139,7 +139,7 @@ button {
     padding: 10px;
 }
 
-form button:hover {
+button:hover {
     background-color: #F64C72;
     color: #1d14d1;
 }
@@ -209,7 +209,7 @@ form button:hover {
         margin-left: 10%;
     }
 }
-/* 
-.sm-img{
-    width: 30px;
-} */
+
+.modal-body{
+    color: black;
+}
