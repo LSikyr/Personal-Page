@@ -1,9 +1,9 @@
 //fetch random advice
 document.querySelector('.fetch-advice').addEventListener('click', fetchJoke);
-function fetchJoke(){
+function fetchJoke() {
   fetch('https://api.adviceslip.com/advice')
-  .then ( response => response.json() )
-  .then ( advice => document.querySelector('.modal-text').innerText = advice.slip.advice )
+    .then(response => response.json())
+    .then(advice => document.querySelector('.modal-text').innerText = advice.slip.advice);
 };
 
 //check input
@@ -22,14 +22,10 @@ function saveText(e) {
   localStorage['name'] = name.value;
   localStorage['email'] = email.value;
   localStorage['comment'] = comment.value;
+}
+
+function loadText() {
   document.querySelector('.modal-name').innerText = localStorage['name'] || '';
   document.querySelector('.modal-email').innerText = localStorage['email'] || '';
   document.querySelector('.modal-comment').innerText = localStorage['comment'] || '';
 }
-
-function loadText() {
-  name.value = localStorage['name'] || '';
-}
-
-
-
