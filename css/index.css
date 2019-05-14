@@ -127,10 +127,10 @@ header nav .navbar-brand {
 }
 
 #contact #contact-form{
-    margin-left: 38%;
+    margin-left: 35%;
 }
 
-button {
+.body-btn {
     width: 80px;
     background-color: #1d14d1;
     color: #F64C72;
@@ -139,11 +139,22 @@ button {
     padding: 10px;
 }
 
-button:hover {
+.body-btn:hover {
     background-color: #F64C72;
     color: #1d14d1;
 }
 
+.modal-body{
+    color: black;
+}
+
+.form-control{
+    width: 300px;
+    border-radius: 0px;
+    border-color: #F64C72;
+    background-color: #2419f0;
+    color: white; 
+}
 
 @media (max-width: 949px){
     #projects-list {
@@ -181,6 +192,10 @@ button:hover {
     #contact #contact-form{
         margin-left: 30%;
     }
+
+    .form-control{
+        width: 250px;
+    }
 }
 
 @media (max-width: 400px){
@@ -208,8 +223,8 @@ button:hover {
     #contact #contact-form{
         margin-left: 10%;
     }
-}
 
-.modal-body{
-    color: black;
+    .form-control{
+        width: 200px;
+    }
 }

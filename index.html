@@ -54,7 +54,7 @@
                 Ukraine, interested in self-development, basketball,
                 music, running. Avid podcasts listener, Tech enthusiast,
                 and biggest Elon Musk fan</p>
-            <button class="fetch-advice" data-toggle="modal" data-target="#modal-window">ADVICE</button>
+            <button class="fetch-advice body-btn" data-toggle="modal" data-target="#modal-window">ADVICE</button>
         </div>
         <img id="developer" src="img/software-dev.png" alt="software developer">
     </section>
@@ -145,14 +145,14 @@
                                 placeholder="Winter is coming"></textarea>
                         </label>
                     </div>
-                    <button type="submit" id="save-btn">SEND</button>
-                    <button type="submit" class="load" data-toggle="modal" data-target="#modal-window2">CHECK</button>
+                    <button type="submit" id="save-btn" class="body-btn">SEND</button>
+                    <button type="submit" class="load body-btn" data-toggle="modal" data-target="#modal-window2">CHECK</button>
                 </form>
                 <br>
             </div>
         </div>
     </section>
-
+    
     <!-- Modal window -->
     <div class="modal fade" id="modal-window" tabindex="-1" role="dialog" aria-labelledby="modal-window"
         aria-hidden="true">
@@ -185,8 +185,11 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <h4>Name:</h4>
                     <p class="modal-name"></p>
+                    <h4>Email:</h4>
                     <p class="modal-email"></p>
+                    <h4>Comment:</h4>
                     <p class="modal-comment"></p>
                 </div>
                 <div class="modal-footer">
