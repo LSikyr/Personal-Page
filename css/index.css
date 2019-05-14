@@ -183,6 +183,12 @@ header nav .navbar-brand {
     #landing-content {
         left: 0%;
         margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #landing-content p {
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     #about_me {
@@ -190,7 +196,7 @@ header nav .navbar-brand {
     }
 
     #contact #contact-form{
-        margin-left: 30%;
+        margin-left: 20%;
     }
 
     .form-control{
@@ -198,7 +204,7 @@ header nav .navbar-brand {
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 415px){
     section #landing-content h1 {
         text-align: center;
         margin-top: 140px;
@@ -221,7 +227,7 @@ header nav .navbar-brand {
     }
 
     #contact #contact-form{
-        margin-left: 10%;
+        margin-left: 20%;
     }
 
     .form-control{
